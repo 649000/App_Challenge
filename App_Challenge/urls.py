@@ -18,4 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    #Will match xyz/maps/xyz
+    url(r'^maps/', include('Maps.urls', namespace="Maps")),
 ]
